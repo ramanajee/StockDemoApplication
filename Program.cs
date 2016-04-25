@@ -21,13 +21,7 @@ namespace StockDemo
             Console.WriteLine("::::Welcome to Stock Information Application:::::" + "\n");
             while (true)
             {
-                Console.WriteLine("===============================================================");
-                Console.WriteLine("1.Print Top 10 Companies Information" + "\n");
-                Console.WriteLine("2.Live Stock Information" + "\n");
-                Console.WriteLine("3.Setup Live Notifications(Coming Soon)..");
-                Console.WriteLine("4.Exit" + "\n");
-                Console.WriteLine("===============================================================");
-                Console.Write("Select Following Option");
+                stockBll.PrintMenu();
                 var userOption = Console.ReadLine();
                 switch (userOption)
                 {

@@ -76,5 +76,16 @@ namespace StockDemo
             var final = javascript.Deserialize<dynamic>(s);
 
         }
+
+        public void PrintMenu()
+        {
+            Console.WriteLine("===============================================================");
+            Console.WriteLine("1.Print Top 10 Companies Information" + "\n");
+            Console.WriteLine("2.Live Stock Information" + "\n");
+            Console.WriteLine("3.Setup Live Notifications(Coming Soon)..");
+            Console.WriteLine("4.Exit" + "\n");
+            Console.WriteLine("===============================================================");
+            Console.Write("Select Following Option");
+        }
     }
 }
